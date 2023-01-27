@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3000",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "clean:win": "rmdir /s /q dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -18,5 +20,6 @@
     "@vitejs/plugin-react": "^3.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
-  }
+  },
+  "packageManager": "yarn@3.3.1"
 }
